@@ -1,4 +1,11 @@
-// // Sign Up as a new owner...should fill the details according to the data in the json
+import React from "react";
 
-// Customers  should also sign up/in
-// //     1. Outlet owners should be able to register their outlet in the system through the dashboard (optional)
+export default function Login (){
+    
+    const header = <h1>Hello</h1>
+    return(
+        <div>
+            {header}
+        </div>
+    )
+}

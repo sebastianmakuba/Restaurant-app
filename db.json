@@ -17,13 +17,15 @@
         "id": 1,
         "food": "Ugali Matumbo",
         "price": 456,
-        "restaurant_id": 1
+        "restaurant_id": 1,
+        "image_url": "https://example.com/images/ugali_matumbo.jpg"
       },
       {
         "id": 2,
         "food": "Rice Beef",
         "price": 500,
-        "restaurant_id": 2
+        "restaurant_id": 2,
+        "image_url": "https://example.com/images/ugali_matumbo.jpg"
       }
     ],
   

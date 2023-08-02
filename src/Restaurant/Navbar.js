@@ -4,9 +4,14 @@ import { Link } from "react-router-dom"
 
 
     return (
-        <nav>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary ">
+            <div className="register-nav">
         <Link to={'/'}>Register Restaurant</Link>
+             </div>
+             <div className="register-nav">
         <Link to={'/updatemenu'}>UpdateMenu</Link>
+            </div>
         </nav>
+
     )
  }

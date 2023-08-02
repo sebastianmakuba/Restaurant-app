@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function UpdateMenu() {
-  const [restaurantName, setRestaurantName] = useState("");
-  const [restaurantId, setRestaurantId] = useState("");
+  const [restaurants, setRestaurants] = useState([]);
+  const [selectedRestaurantId, setSelectedRestaurantId] = useState("");
   const [dishName, setDishName] = useState("");
   const [price, setPrice] = useState("");
   const [imageUrl, setImageUrl] = useState("");
+
+  // Fetch the list of restaurants on component mount
+  useEffect(() => {
+    fetch("http://localhost:3000/restaurants")
+      .then((response) => response.json())
+      .then((data) => setRestaurants(data))
+      
+  }, []);
 
   const addDish = (event) => {
     event.preventDefault();
@@ -13,8 +21,10 @@ export default function UpdateMenu() {
     const newDish = {
       food: dishName,
       price: parseInt(price),
-      restaurant_id: parseInt(restaurantId),
+      restaurant_id: parseInt(selectedRestaurantId),
       image_url: imageUrl,
+
+     
     };
 
     // Send the data to the server (JSON server)
@@ -28,15 +38,12 @@ export default function UpdateMenu() {
       .then((response) => response.json())
       .then((data) => {
         // Clear the form fields after successful dish addition
-        setRestaurantName("");
-        setRestaurantId("");
+        setSelectedRestaurantId("");
         setDishName("");
         setPrice("");
         setImageUrl("");
       })
-      .catch((error) => {
-        console.error("Error adding dish:", error);
-      });
+      alert ('Food item has been added successfully')
   };
 
   return (
@@ -44,30 +51,23 @@ export default function UpdateMenu() {
       <h1>Add Food</h1>
       <form className="center" onSubmit={addDish}>
         <div className="mb-3 w-50">
-          <label htmlFor="exampleInputPassword1" className="form-label">
-            Restaurant Name
+          <label htmlFor="restaurantSelect" className="form-label">
+            Select Restaurant Name
           </label>
-          <input
-            type="text"
-            className="form-control"
-            id="exampleInputPassword1"
-            value={restaurantName}
-            onChange={(e) => setRestaurantName(e.target.value)}
+          <select
+            id="restaurantSelect"
+            className="form-select"
+            value={selectedRestaurantId}
+            onChange={(e) => setSelectedRestaurantId(e.target.value)}
             required
-          />
-        </div>
-        <div className="mb-3 w-50">
-          <label htmlFor="exampleInputPassword1" className="form-label">
-            Restaurant Id
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="exampleInputPassword1"
-            value={restaurantId}
-            onChange={(e) => setRestaurantId(e.target.value)}
-            required
-          />
+          >
+            <option value="">Select your Restaurant</option>
+            {restaurants.map((restaurant) => (
+              <option key={restaurant.id} value={restaurant.id}>
+                {restaurant.name}
+              </option>
+            ))}
+          </select>
         </div>
         <div className="mb-3 w-50">
           <label htmlFor="exampleInputEmail1" className="form-label">

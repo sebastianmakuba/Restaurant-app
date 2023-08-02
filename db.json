@@ -14,12 +14,8 @@
       "name": "Sebastian",
       "contact": "07123456",
       "id": 3
-    },
-    {
-      "name": "Sam",
-      "contact": "07123456",
-      "id": 4
     }
+    
   ],
   "food": [
     {
@@ -35,21 +31,8 @@
       "price": 500,
       "restaurant_id": 2,
       "image_url": "https://example.com/images/ugali_matumbo.jpg"
-    },
-    {
-      "food": "Pilau",
-      "price": 300,
-      "restaurant_id": 3,
-      "image_url": "not available",
-      "id": 3
-    },
-    {
-      "food": "Pilau",
-      "price": 200,
-      "restaurant_id": 4,
-      "image_url": "not there",
-      "id": 4
     }
+    
   ],
   "orders": [
     {

@@ -1,6 +1,15 @@
+body{
+    background-image: url('https://media.istockphoto.com/id/1403973419/photo/table-top-of-food-spread-on-table.webp?b=1&s=170667a&w=0&k=20&c=82mAqd_JUxsEsYRlrQCRIvpEVWkwdB3aiw5DMh74N5I=');
+}
+form label{
+    background-color: aliceblue ;
+}
 .center {
     margin: 0 auto;
     width:50%
+}
+.register-nav{
+    size: 200px;
 }
 
 nav {

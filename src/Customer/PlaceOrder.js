@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import DisplayMenu from './DisplayMenu'
 
-
+//function
 function PlaceOrder() {
     const[data, setData] = useState('');
     const[cartItems, setCartItems] = useState([]);

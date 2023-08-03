@@ -14,7 +14,7 @@ import { Link } from "react-router-dom"
             <div className="register-nav">
         <Link to={'/placeOrder'}>Place Order</Link>
         <Link to={'/additems'}>Add Items</Link>
-        <Link to={'/placeOrder'}>Place Order</Link>
+        {/* <Link to={'/placeOrder'}>Place Order</Link> */}
             </div>
         </nav>
 

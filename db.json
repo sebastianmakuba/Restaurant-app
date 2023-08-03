@@ -20,18 +20,34 @@
   "food": [
     {
       "id": 1,
-      "food": "Ugali Matumbo",
+      "food": "Sushi",
       "price": 456,
       "restaurant_id": 1,
-      "image_url": "https://example.com/images/ugali_matumbo.jpg"
+      "image_url": "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnx4V1cxYXdzbm4xRXx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
     },
     {
       "id": 2,
-      "food": "Rice Beef",
-      "price": 500,
+      "food": "Crubby Party",
+      "price": 1180,
       "restaurant_id": 2,
-      "image_url": "https://example.com/images/ugali_matumbo.jpg"
+      "image_url": "https://images.unsplash.com/photo-1596649299486-4cdea56fd59d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 2,
+      "food": "Pasta",
+      "price": 900,
+      "restaurant_id": 2,
+      "image_url": "https://images.unsplash.com/photo-1611270629569-8b357cb88da9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8UGFzdGF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 2,
+      "food": "Sombe",
+      "price": 700,
+      "restaurant_id": 2,
+      "image_url": "https://www.cookingchanneltv.com/content/dam/images/cook/fullset/2014/7/9/0/CCETS305_goat-sombe-fu-fu-recipe_s4x3.jpg"
     }
+    
+    
     
   ],
   "orders": [
@@ -49,5 +65,9 @@
       "timestamp": "2023-07-30",
       "restaurant_id": 5
     }
+  ],
+  "cart" : [
+
   ]
+
 }

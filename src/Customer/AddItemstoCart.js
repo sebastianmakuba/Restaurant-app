@@ -11,12 +11,12 @@ function AddItemstoCart(){
   useEffect(
     ()=>{
         fetch("http://localhost:3000/food")
-        .then(response => response.json())
+        .then((response) => response.json())
         .then((data) => {
            setFood(data)
            //setPrice([...price,data])
            console.log(data)
-           console.log(food)
+           //console.log(food)
           
         })
          
@@ -45,7 +45,7 @@ function AddItemstoCart(){
     
 return(
      <>
-     <h1>All Items</h1>
+     <h1>Our Top Picks</h1>
      <section className="py-4 container">
         <div className="row justify-content-center">
            
@@ -54,8 +54,9 @@ return(
       ))}
 
         </div>
+        {/* <p>Cart Length {cart.length} </p> */}
+        <div className="total">
         <p>Cart Length {cart.length} </p>
-        <div>
             {cart.map((item,index)=>(
                 <div key={index}>
                     <p>{item.food } {item.price} </p> 
@@ -63,7 +64,7 @@ return(
                     </div>
                 
             ))}
-            <p>Total Price {cart
+            <p> Total Price {cart
                   .reduce(
                     (accumulator, item) => accumulator + item.price,
                     0

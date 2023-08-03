@@ -309,6 +309,14 @@
         "timestamp": "2023-08-03T22:35:05.324Z",
         "restaurant_id": 2
       }
+    ],
+    [
+      {
+        "food_id": 2,
+        "table_no": 17,
+        "timestamp": "2023-08-03T22:38:31.413Z",
+        "restaurant_id": 2
+      }
     ]
   ],
   "cart": []

@@ -55,7 +55,6 @@
       "restaurant_id": 2,
       "image_url": "https://www.cookingchanneltv.com/content/dam/images/cook/fullset/2014/7/9/0/CCETS305_goat-sombe-fu-fu-recipe_s4x3.jpg"
     },
-    
     {
       "food": "Icecream",
       "price": 500,
@@ -80,5 +79,25 @@
       "restaurant_id": 5
     }
   ],
-  "cart": []
+  "cart": [],
+  "tables": [
+    {
+      "restaurantName": "3",
+      "tableNumber": "3",
+      "occupants": "1",
+      "id": 1
+    },
+    {
+      "restaurantName": "ff",
+      "tableNumber": "5",
+      "occupants": "8",
+      "id": 2
+    },
+    {
+      "restaurantName": "",
+      "tableNumber": "",
+      "occupants": "",
+      "id": 3
+    }
+  ]
 }

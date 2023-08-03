@@ -11,6 +11,8 @@ import Home from './Home';
 import Customers from './Customers';
 import Restaurantowners from './RestaurantOwners';
 import SearchBar from './Customer/SearchBar';
+import ShowAvailability from './Restaurant/ShowAvailability';
+import ConfirmOrder from './Restaurant/ConfirmOrder';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
           <Route path='restaurantowners' element = {<Restaurantowners/>}>
           <Route path='login' element = {<Login/>} />
           <Route path='updatemenu' element = {<UpdateMenu/>} />
+          <Route path='showavailability' element = {<ShowAvailability/>} />
+          <Route path='confirmorder' element = {<ConfirmOrder/>} />
           </Route>
         </Route>
         

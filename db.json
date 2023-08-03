@@ -327,5 +327,25 @@
       }
     ]
   ],
-  "cart": []
+  "cart": [],
+  "tables": [
+    {
+      "restaurantName": "3",
+      "tableNumber": "3",
+      "occupants": "1",
+      "id": 1
+    },
+    {
+      "restaurantName": "ff",
+      "tableNumber": "5",
+      "occupants": "8",
+      "id": 2
+    },
+    {
+      "restaurantName": "",
+      "tableNumber": "",
+      "occupants": "",
+      "id": 3
+    }
+  ]
 }

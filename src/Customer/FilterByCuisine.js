@@ -10,7 +10,6 @@ function FilterByCuisine({ restaurants, onFilter }) {
   const handleFilterClick = () => {
     onFilter(selectedCuisine);
   };
-
   return (
     <div>
       <h2>Filter by Cuisine</h2>

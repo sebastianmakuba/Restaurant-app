@@ -7,10 +7,11 @@ export default function Restaurantowners (){
 
     <nav>
        
-        {/* <Link to={'confirmorder'}>Add Items</Link> */}
+        
         <Link to={'login'}>Register Your Restaurant</Link>
-        <Link to={'showavailability'}>Show Available Food</Link>
-        <Link to={'updatemenu'}>Update Your Menu</Link>            
+        <Link to={'showavailability'}>Show Available Tables</Link>
+        <Link to={'updatemenu'}>Update Your Menu</Link> 
+        <Link to={'confirmorder'}>Confirm Order</Link>           
     </nav>
   
         <Outlet/>

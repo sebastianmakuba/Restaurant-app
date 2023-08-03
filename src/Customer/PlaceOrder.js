@@ -52,7 +52,7 @@ function PlaceOrder() {
         onFilter={handleFilterByCuisine}
       />
       <div>
-        {filteredFood.map((foodItem) => (
+        {filteredFood && filteredFood.map((foodItem) => (
           <DisplayMenu
             key={foodItem.id}
             foodItem={foodItem}

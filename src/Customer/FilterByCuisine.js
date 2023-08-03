@@ -1,50 +1,33 @@
 import React, { useState } from 'react';
 
-const FilterOptions = ({ restaurants, onFilter }) => {
+function FilterByCuisine({ restaurants, onFilter }) {
   const [selectedCuisine, setSelectedCuisine] = useState('');
-  const [selectedPrice, setSelectedPrice] = useState('');
 
   const handleCuisineChange = (e) => {
     setSelectedCuisine(e.target.value);
   };
 
-  const handlePriceChange = (e) => {
-    setSelectedPrice(e.target.value);
-  };
-
   const handleFilterClick = () => {
-    onFilter(selectedCuisine, selectedPrice);
+    onFilter(selectedCuisine);
   };
 
   return (
     <div>
-      <h2>Filter Options</h2>
-      <div>
-        <label>
-          Cuisine:
-          <select value={selectedCuisine} onChange={handleCuisineChange}>
-            <option value="">All</option>
-            {restaurants.map((restaurant) => (
-              <option key={restaurant.id} value={restaurant.id}>
-                {restaurant.name}
-              </option>
-            ))}
-          </select>
-        </label>
-      </div>
-      <div>
-        <label>
-          Price:
-          <select value={selectedPrice} onChange={handlePriceChange}>
-            <option value="">All</option>
-            <option value="lowest">Lowest to Highest</option>
-            <option value="highest">Highest to Lowest</option>
-          </select>
-        </label>
-      </div>
+      <h2>Filter by Cuisine</h2>
+      <label>
+        Cuisine:
+        <select value={selectedCuisine} onChange={handleCuisineChange}>
+          <option value="">All</option>
+          {restaurants.map((restaurant) => (
+            <option key={restaurant.id} value={restaurant.name}>
+              {restaurant.name}
+            </option>
+          ))}
+        </select>
+      </label>
       <button onClick={handleFilterClick}>Filter</button>
     </div>
   );
-};
+}
 
-export default FilterOptions;
+export default FilterByCuisine;

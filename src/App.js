@@ -4,13 +4,13 @@ import Login from './Restaurant/Login';
 import UpdateMenu from './Restaurant/UpdateMenu';
 import {Routes, Route} from 'react-router-dom';
 import Navbar from './Navbar';
-import PlaceOrder from './Customer/PlaceOrder';
+// import PlaceOrder from './Customer/PlaceOrder';
 import AddItemstoCart from './Customer/AddItemstoCart';
 import DisplayMenu from './Customer/DisplayMenu';
 import Home from './Home';
 import Customers from './Customers';
 import Restaurantowners from './RestaurantOwners';
-import SearchBar from './Customer/SearchBar';
+// import SearchBar from './Customer/SearchBar';
 
 
 function App() {
@@ -23,10 +23,9 @@ function App() {
           <Route path='customers' element = {<Customers/>}>
           <Route path='additemstocart' element = {<AddItemstoCart/>} />
           <Route path='displaymenu' element = {<DisplayMenu/>} />
-          
           {/* <Route path='filterbycuisne' element = {<FilterBy/>} /> */}
           
-          <Route path='placeorder' element = {<PlaceOrder/>} />         
+          {/* <Route path='placeorder' element = {<PlaceOrder/>} />          */}
           </Route>
           <Route path='restaurantowners' element = {<Restaurantowners/>}>
           <Route path='login' element = {<Login/>} />

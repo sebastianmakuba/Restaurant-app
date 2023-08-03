@@ -1,4 +1,44 @@
-// Each food on the menu should have a price and restaurant name/category  Ethiopian food, Nigerian food, Congolese food, Kenyan food etc.
+// // Each food on the menu should have a price and restaurant name/category  Ethiopian food, Nigerian food, Congolese food, Kenyan food etc.
+// import React, { useState, useEffect } from "react";
+
+// function DisplayMenu({ foodItem, cartItems, handleAddToCart }) {
+//   const [restaurantName, setRestaurantName] = useState('');
+
+//   useEffect(() => {
+//     fetch(`http://localhost:3000/food`)
+//       .then((response) => response.json())
+//       .then((restaurantData) => {
+//         setRestaurantName(restaurantData.name);
+//       })
+      
+//   //     .catch((error) => {
+//   //       console.error('Error fetching restaurant:', error);
+//   //     });
+//    }, );
+
+//   const isInCart = cartItems.some((item) => item.id === foodItem.id);
+
+//   return (
+//     <div className="food-item">
+//       <h3>{foodItem.food}</h3>
+//       <p>Price: ${foodItem.price}</p>
+//       <p>Restaurant: {restaurantName}</p>
+//       <img
+//         src={foodItem.image_url}
+//         alt={foodItem.food} // Add alt prop for accessibility
+//         style={{ maxWidth: "200px" }}
+//       />
+//       <button
+//         onClick={() => handleAddToCart(foodItem, 1)}
+//         disabled={isInCart}
+//       >
+//         {isInCart ? 'Added to Cart' : 'Add to Cart'}
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default DisplayMenu;
 import React, { useState } from "react";
 
 
@@ -54,7 +94,7 @@ const data = {
   ]
 };
 
-function App ()  {
+export default function DisplayMenu ()  {
   const [cuisineFilter, setCuisineFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("");
@@ -119,4 +159,4 @@ function App ()  {
   );
 };
 
-export default App;
+

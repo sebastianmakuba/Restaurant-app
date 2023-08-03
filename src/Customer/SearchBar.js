@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from 'react';
 
 
-function SearchBar(){
-    return(
-       <div className="search">
-        <input type="text" placeholder="Search...."></input>
-       </div>
-    )
+function SearchBar({ onSearch }) {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+    onSearch(e.target.value);
+  };
+
+  return (
+    <div className="search-bar">
+      <input
+        type="text"
+        placeholder="Search for food..."
+        value={searchTerm}
+        onChange={handleSearch}
+      />
+    </div>
+  );
 }
 
 export default SearchBar;

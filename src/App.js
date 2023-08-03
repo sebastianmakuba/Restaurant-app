@@ -21,6 +21,7 @@ function App() {
           <Route path='customers' element = {<Customers/>}>
           <Route path='additemstocart' element = {<AddItemstoCart/>} />
           <Route path='displaymenu' element = {<DisplayMenu/>} />
+          
           {/* <Route path='filterbycuisne' element = {<FilterBy/>} /> */}
           <Route path='placeorder' element = {<PlaceOrder/>} />         
           </Route>

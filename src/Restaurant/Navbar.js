@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary ">
+        <nav className=" navbar bg-dark border-bottom border-body  data-bs-theme=dark">
             <div className="register-nav">
         <Link to={'/'}>Register Restaurant</Link>
              </div>

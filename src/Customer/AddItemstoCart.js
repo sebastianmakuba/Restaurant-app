@@ -76,6 +76,7 @@ function AddItemstoCart() {
     setFood(filteredFood);
   };
   return (
+    //
     <>
       <SearchBar onSearch={handleSearch} />
       <h1>Our Top Picks</h1>

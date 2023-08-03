@@ -14,8 +14,17 @@
       "name": "Sebastian",
       "contact": "07123456",
       "id": 3
+    },
+    {
+      "name": "Bakhita",
+      "contact": "0734990876",
+      "id": 4
+    },
+    {
+      "name": "Agnes",
+      "contact": "12345",
+      "id": 5
     }
-    
   ],
   "food": [
     {
@@ -45,10 +54,15 @@
       "price": 700,
       "restaurant_id": 2,
       "image_url": "https://www.cookingchanneltv.com/content/dam/images/cook/fullset/2014/7/9/0/CCETS305_goat-sombe-fu-fu-recipe_s4x3.jpg"
+    },
+    
+    {
+      "food": "Icecream",
+      "price": 500,
+      "restaurant_id": 5,
+      "image_url": "https://images.unsplash.com/photo-1477505982272-ead89926a577?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjAwfHxGT09EfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      "id": 4
     }
-    
-    
-    
   ],
   "orders": [
     {
@@ -66,8 +80,5 @@
       "restaurant_id": 5
     }
   ],
-  "cart" : [
-
-  ]
-
+  "cart": []
 }

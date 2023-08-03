@@ -10,12 +10,14 @@ import DisplayMenu from './Customer/DisplayMenu';
 import Home from './Home';
 import Customers from './Customers';
 import Restaurantowners from './RestaurantOwners';
+import SearchBar from './Customer/SearchBar';
 
 
 function App() {
   return (
     <>
       <Navbar/>
+     
       <Routes>        
         <Route path='/' element = {<Home/>} >
           <Route path='customers' element = {<Customers/>}>
@@ -23,6 +25,7 @@ function App() {
           <Route path='displaymenu' element = {<DisplayMenu/>} />
           
           {/* <Route path='filterbycuisne' element = {<FilterBy/>} /> */}
+          
           <Route path='placeorder' element = {<PlaceOrder/>} />         
           </Route>
           <Route path='restaurantowners' element = {<Restaurantowners/>}>
@@ -32,6 +35,7 @@ function App() {
         </Route>
         
      </Routes>
+     
 
   </>
   )

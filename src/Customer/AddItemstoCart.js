@@ -1,6 +1,7 @@
 // Customers should add items to a cart and see the order summary before placing an order.
 import {useEffect, useState} from "react";
 import ItemsCard from "./ItemsCard";
+import SearchBar from "./SearchBar";
 
 function AddItemstoCart(){
     const [food,setFood] = useState([])
@@ -45,6 +46,7 @@ function AddItemstoCart(){
     
 return(
      <>
+     <SearchBar/>
      <h1>Our Top Picks</h1>
      <section className="py-4 container">
         <div className="row justify-content-center">
@@ -55,12 +57,13 @@ return(
 
         </div>
         {/* <p>Cart Length {cart.length} </p> */}
+        
         <div className="total">
         <p>Cart Length {cart.length} </p>
             {cart.map((item,index)=>(
                 <div key={index}>
                     <p>{item.food } {item.price} </p> 
-                    <button onClick={()=>setCart()}>Remove</button>
+                    {/* <button onClick={()=>setCart()}>Remove</button> */}
                     </div>
                 
             ))}
@@ -70,7 +73,10 @@ return(
                     0
                   )
                   }</p>
+                
+
         </div>
+        
 
      </section> 
      
